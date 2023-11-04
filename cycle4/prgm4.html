@@ -1,0 +1,33 @@
+<!--4.write a javascript program to check whether a number is positive or negative. Beema Salim 2/11/2023 !-->
+
+<html>
+<head>
+<style>
+h2 {
+font-size : 30px;
+color : green;
+font-weight : bold;
+text-decoration : underline;
+}
+</style>
+</head>
+ <body>
+<center>
+<h2>Check if Positive or Negative</h2>
+   <label for="">Enter any number : </label>
+   <input type="text" name="" id="num">
+   <button onclick="check()">Check</button>
+<p id="result"></p>
+  <script>
+        function check(){
+            let num = parseInt(document.getElementById("num").value)
+            if (num > 0){
+                document.getElementById("result").innerHTML = num + " is a positive number."
+            }else {
+                document.getElementById("result").innerHTML = num + " is a negative number."
+            }
+        }
+ </script>
+</center>
+</body>
+</html>

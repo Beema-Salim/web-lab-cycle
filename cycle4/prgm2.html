@@ -1,0 +1,36 @@
+<!--2.Program to perform addition of 2 numbers. Beema Salim 27/10/2023 !-->
+<html>
+<head>
+<style>
+h1{
+color:green;
+text-decoration:underline;
+}
+
+</style>
+</head>
+<body>
+<center>
+<h1>Addition of two numbers</h1>
+<label>Enter the value of first number:</label>
+<input type="text" id="first_num">
+<br>
+<br>
+<label>Enter the value of second number:</label>
+<input type="text" id="second_num">
+<br>
+<br>
+<button onclick="add()">Sum</button>
+<p id="result"></p>
+    </div>
+
+    <script>
+        function add(){
+            let num1 = parseInt(document.getElementById("first_num").value)
+            let num2 = parseInt(document.getElementById("second_num").value)
+            document.getElementById("result").innerHTML = num1 + num2
+        }
+    </script>
+
+</body> 
+</html>
