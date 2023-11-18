@@ -1,0 +1,33 @@
+<!--11.Create a HTML page to display a new image and text when the mouse comes over the existing content in the page using JavaScript Event Handling. Beema Salim 9/11/2023 !-->
+<html>
+<head>
+    <title>mouse over</title>
+</head>
+
+<body>
+    <img id="img" name="img"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEepIwm6OmV__MWX1oYDpNjnY7sfESVJ0IcA&usqp=CAU"
+        alt="">
+    <p id="txt" name="txt">JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2023, 98.7% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries.</p>
+
+    <script>
+        let img = document.getElementById("img")
+        let txt = document.getElementById("txt")
+
+        img.addEventListener("mouseover", () => {
+            document.img.src = "https://www.tutorialspoint.com/static/images/logo-footer-b.png"
+        })
+        img.addEventListener("mouseout", () => {
+            document.img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEepIwm6OmV__MWX1oYDpNjnY7sfESVJ0IcA&usqp=CAU"
+        })
+
+        txt.addEventListener("mouseover", () => {
+            document.getElementById("txt").innerHTML = "JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS."
+        })
+        txt.addEventListener("mouseout", () => {
+            document.getElementById("txt").innerHTML = "JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2023, 98.7% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries." })
+
+    </script>
+</body>
+
+</html>

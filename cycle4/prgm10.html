@@ -1,0 +1,36 @@
+<!--10. Evaluating JavaScript Event Handling for every click of a button to change the background color of a HTML page. Beema Salim 9/11/2023 !-->
+<html>
+<head>
+    <title>Change bg color</title>
+    <style>
+        div {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            /* position: absolute; */
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p id="text">change background color</p>
+        <button id="change">Change</button>
+    </div>
+
+    <script>
+        var btn = document.getElementById("change")
+        let allChar = "0123456789ABCDEF"
+        btn.addEventListener("click", change)
+        function change(){
+
+            let randCol = ''
+            for (let i = 0; i < 6; i++) {
+                randCol += allChar[Math.floor(Math.random()*16)]
+            }
+            document.body.style.background = "#" + randCol
+        }
+    </script>
+</body>
+</html>

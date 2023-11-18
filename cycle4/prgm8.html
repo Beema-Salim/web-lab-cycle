@@ -1,0 +1,21 @@
+<!--8.Write a web page that uses the prompt to get the user to input their first name and then their year of birth. Calculate how old they are and write it to the web page. Beema Salim 9/11/2023 !-->
+<html>
+<head>
+    <title>prompt</title>
+</head>
+<body>
+<center>
+<p id="name"></p>
+<p id="age"></p>
+<script>
+var name=prompt("enter your name")
+var dob=new Date(prompt("enter your date of birth (yyyy-mm-dd)"))
+var currentdate=new Date()
+var diff=currentdate.getFullYear() - dob.getFullYear()
+document.getElementById("age").innerHTML=diff
+document.getElementById("name").innerHTML=name
+console.log(diff);
+</script> 
+</center>
+</body>
+</html>

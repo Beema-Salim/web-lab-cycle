@@ -1,0 +1,17 @@
+<!--7.Write a web page that uses a prompt to ask the user what color they’d like the background of their paragraphs to be. It should then write a paragraph with the background set to the appropriate color. Beema Salim 9/11/2023 !-->
+<html>
+<head>
+    <title>Prompt</title>
+</head>
+
+<body>
+    <p id="para">JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2023, 98.7% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries.
+    </p>
+    <script>
+        var color = prompt("Enter color")
+        console.log(color);
+        document.getElementById("para").style.background = color
+    </script>
+</body>
+
+</html>
